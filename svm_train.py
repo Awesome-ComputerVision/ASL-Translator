@@ -1,8 +1,8 @@
 import cv2
 import numpy as np
 from numpy.linalg import norm
-svm_params = dict( kernel_type = cv2.SVM_RBF,
-                    svm_type = cv2.SVM_C_SVC,
+svm_params = dict( kernel_type = cv2.ml.SVM_RBF,
+                    svm_type = cv2.ml.SVM_C_SVC,
                     C=2.67, gamma=5.383 )
 class StatModel(object):
     def load(self, fn):
